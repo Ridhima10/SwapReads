@@ -1016,7 +1016,23 @@ body {
 
 .benefits-card:is(:hover, :focus-within) {
   transform: translateY(-10px);
+  background-color: #FFB6B9; /* Change to desired hover color */
 }
+
+.benefits-card:hover, .benefits-card:focus-within {
+  background-color: #FFB6B9; /* Change to desired hover color */
+  color: black;
+}
+
+.benefits-card:hover .card-title,
+.benefits-card:hover .card-text,
+.benefits-card:hover .btn-link,
+.benefits-card:focus-within .card-title,
+.benefits-card:focus-within .card-text,
+.benefits-card:focus-within .btn-link {
+  color: black; /* Change text color to black on hover */
+}
+
 
 .benefits-card:is(:hover, :focus-within)::before,
 .benefits-card:is(:hover, :focus-within)::after {
